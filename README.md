@@ -3,10 +3,13 @@ Create Edittext widgets with hints and get values from it
 
 how to use 
 
-//inside your activity
-//default inputtype is text
-//for number type use <your hint here>:number
-//for password type use  <your hint here>:password
+
+default inputtype is text ,for number type use <your hint here>:number ,for password type use  <your hint here>:password.
+
+
+	
+	Inside your Activity
+	
         final String [] names = {"name","age:number","place","mob:number","email","username","pass:password"};
         final RelativeLayout rl = (RelativeLayout)findViewById(R.id.activity_main);
         new CreateInputs(MainActivity.this,names,rl).create();
@@ -20,13 +23,6 @@ how to use
                 if(nm.size()==names.length){
                 //get values on the repective order
                     String name = nm.get(0);
-                    String age = nm.get(1);
-                    String place = nm.get(2);
-                    String mob = nm.get(3);
-                    String email = nm.get(4);
-                    String username = nm.get(5);
-                    String pass = nm.get(6);
-                    b.setText(name+"\n"+age+"\n"+place+"\n"+mob+"\n"+email+"\n"+username+"\n"+pass+"\n");
                 }
                 else {
                     Toast.makeText(MainActivity.this, "Fields are empty", Toast.LENGTH_SHORT).show();
