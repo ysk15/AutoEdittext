@@ -1,6 +1,7 @@
 package com.example.autotextinput;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.text.InputType;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,12 +20,14 @@ public class CreateInputs {
     private    Context cx;
     private String[] names;
     private   RelativeLayout rl;
+    private   Drawable dr;
 
 
-    public CreateInputs(Context cx, String[] names, RelativeLayout rl) {
+    public CreateInputs(Context cx, String[] names, RelativeLayout rl,Drawable dr) {
         this.cx = cx;
         this.names = names;
         this.rl = rl;
+        this.dr = dr;
     }
 
     public void create(){

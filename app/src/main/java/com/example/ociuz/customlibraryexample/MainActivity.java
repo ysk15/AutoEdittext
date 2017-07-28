@@ -2,6 +2,7 @@ package com.example.ociuz.customlibraryexample;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
@@ -27,12 +28,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         final String [] names = {"name","age:number","place","mob:number","email","username","pass:password"};
         final RelativeLayout rl = (RelativeLayout)findViewById(R.id.activity_main);
-        new CreateInputs(MainActivity.this,names,rl).create();
+       final Drawable dr = getResources().getDrawable(R.drawable.shape);
+        new CreateInputs(MainActivity.this,names,rl,dr).create();
         final Button b = (Button)findViewById(R.id.button);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ArrayList<String> nm = new ArrayList<String>(new CreateInputs(MainActivity.this,names,rl).getvalues(rl)) ;
+                ArrayList<String> nm = new ArrayList<String>(new CreateInputs(MainActivity.this,names,rl,dr).getvalues(rl)) ;
                 if(nm.size()==names.length){
                     String name = nm.get(0);
                     String age = nm.get(1);
@@ -49,7 +51,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    public  static void create(Context cx, String [] names, RelativeLayout rl){
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    public  static void create(Context cx, String [] names, RelativeLayout rl,Drawable dr){
         LinearLayout li = new LinearLayout(cx);
         li.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
         li.setOrientation(LinearLayout.VERTICAL);
@@ -59,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             EditText ed = new EditText(cx);
             ed.setHint(names[i]);
             ed.setId(i);
-            ed.setBackgroundResource(R.drawable.shape);
+            ed.setBackground(dr);
             ed.setPadding(5,5,5,5);
             ed.setHintTextColor(Color.BLACK);
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
