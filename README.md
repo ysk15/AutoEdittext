@@ -65,23 +65,17 @@ default inputtype is text ,for number type use <your hint here>:number ,for pass
         });
 	
 	
-	
-	
-	
-	
-	
-Also create  a shape.xml in your drawable
-	
-
-<?xml version="1.0" encoding="utf-8" ?> 
- <selector xmlns:android="http://schemas.android.com/apk/res/android">
- <item>
-<shape android:shape="rectangle">
-  <stroke android:color="#000000" android:width="1dp" /> 
-  <corners android:radius="3dp" /> 
-  </shape>
-  </item>
-  </selector>
+       Also create  a shape.xml in your drawable
+       
+     <?xml version="1.0" encoding="utf-8" ?> 
+     <selector xmlns:android="http://schemas.android.com/apk/res/android">
+     <item>
+     <shape android:shape="rectangle">
+     <stroke android:color="#000000" android:width="1dp" /> 
+     <corners android:radius="3dp" /> 
+     </shape>
+     </item>
+     </selector>
 
 
 
