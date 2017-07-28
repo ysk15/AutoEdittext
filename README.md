@@ -47,7 +47,7 @@ default inputtype is text ,for number type use <your hint here>:number ,for pass
         final String [] names = {"name","age:number","place","mob:number","email","username","pass:password"};
         final RelativeLayout rl = (RelativeLayout)findViewById(R.id.activity_main);
 	 final Drawable dr = getResources().getDrawable(R.drawable.shape);
-        new CreateInputs(MainActivity.this,names,rl).create();
+        new CreateInputs(MainActivity.this,names,rl,dr).create();
          final Button b = (Button)findViewById(R.id.button);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
