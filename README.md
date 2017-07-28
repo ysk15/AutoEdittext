@@ -1,6 +1,11 @@
 # AutoEdittext
 Create Edittext widgets with hints and get values from it
 
+
+https://user-images.githubusercontent.com/30522134/28714091-77a26312-73af-11e7-8dc3-beff5fc0d0aa.png
+
+
+
 how to use 
 
 
