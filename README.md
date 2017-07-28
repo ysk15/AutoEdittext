@@ -3,17 +3,29 @@ Create Edittext widgets with hints and get values from it
 add library by
 
 edit in project level gradle
+
+
+
 allprojects {
 		repositories {
+		
 			...
 			maven { url 'https://jitpack.io' }
+			
+			
 		}
 	}
 	
 	
 	
 edit in app level gradle
+
+
+
+
 dependencies {
+
+
 	        compile 'com.github.ysk15:AutoEdittext:-cc510a0d7c-1'
 	}
 	
