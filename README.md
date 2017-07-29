@@ -1,6 +1,7 @@
 # AutoEdittext
 Create Edittext widgets with hints and get values from it
-add library by
+
+     add library by
 
 edit in project level gradle
 
