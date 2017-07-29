@@ -34,10 +34,10 @@ dependencies {
    ![Alt text](https://user-images.githubusercontent.com/30522134/28714091-77a26312-73af-11e7-8dc3-beff5fc0d0aa.png "Screen Shot")
 
 how to use 
+```
 
-
-    default inputtype is text ,for number type use <your hint here>:number ,for password type use  <your hint here>:password.
-      
+   default inputtype is text ,for number type use <your hint here>:number ,for password type use  <your hint here>:password.
+   ```   
       Inside your Activity
 	
      final String [] names = {"name","age:number","place","mob:number","email","username","pass:password"};
