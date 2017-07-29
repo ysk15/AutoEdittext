@@ -53,14 +53,9 @@ how to use
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
-		
-		        //get all inputs as an arraylist of string
-		        ArrayList<String> nm = new ArrayList<String>(new CreateInputs(MainActivity.this,names,rl,dr).getvalues(rl)) ;
-               
-	       
-	      
-               //check if any fields are empty
+                 //get all inputs as an arraylist of string
+		 ArrayList<String> nm = new ArrayList<String>(new CreateInputs(MainActivity.this,names,rl,dr).getvalues(rl)) ;
+                //check if any fields are empty
                 if(nm.size()==names.length){
                 //get values on the repective order
                     String name = nm.get(0);
