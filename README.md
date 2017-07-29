@@ -5,7 +5,7 @@ add library by
 
 edit in project level gradle
 
-allprojects {
+     allprojects {
 		repositories {
 		
 			...
@@ -21,8 +21,8 @@ edit in app level gradle
 
 
 
-
-dependencies {
+ 
+     dependencies {
 
 
 	         compile 'com.github.ysk15:AutoEdittext:1.0'
@@ -46,20 +46,29 @@ how to use
 	 new CreateInputs(MainActivity.this,names,rl,dr).create();
 
   final Button b = (Button)findViewById(R.id.button);
+  
    b.setOnClickListener(new View.OnClickListener() {
+   
     @Override
       public void onClick(View v) {
+      
   //get all inputs as an arraylist of string
   
              ArrayList<String> nm = new ArrayList<String>(new CreateInputs(MainActivity.this,names,rl,dr).getvalues(rl)) ;
              
 //check if any fields are empty
+
   if(nm.size()==names.length){
+  
 //get values on the repective order
+
   String name = nm.get(0);
+  
     }
      else {
+     
      Toast.makeText(MainActivity.this, "Fields are empty", Toast.LENGTH_SHORT).show();
+     
                 }
             }
         });
