@@ -45,15 +45,19 @@ default inputtype is text ,for number type use <your hint here>:number ,for pass
 	
 	Inside your Activity
 	
-        final String [] names = {"name","age:number","place","mob:number","email","username","pass:password"};
+   final String [] names = {"name","age:number","place","mob:number","email","username","pass:password"};
         final RelativeLayout rl = (RelativeLayout)findViewById(R.id.activity_main);
 	 final Drawable dr = getResources().getDrawable(R.drawable.shape);
         new CreateInputs(MainActivity.this,names,rl,dr).create();
-         final Button b = (Button)findViewById(R.id.button);
+	
+	
+	final Button b = (Button)findViewById(R.id.button);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ArrayList<String> nm = new ArrayList<String>(new CreateInputs(MainActivity.this,names,rl,dr).getvalues(rl)) ;
+               
+	       
+                  ArrayList<String> nm = new ArrayList<String>(new CreateInputs(MainActivity.this,names,rl,dr).getvalues(rl)) ;
                 //get all inputs as an arraylist of string
                 //check if any fields are empty
                 if(nm.size()==names.length){
