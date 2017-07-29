@@ -34,12 +34,14 @@ dependencies {
    ![Alt text](https://user-images.githubusercontent.com/30522134/28714091-77a26312-73af-11e7-8dc3-beff5fc0d0aa.png "Screen Shot")
 
 how to use 
-   ```
+
 default inputtype is text ,for number type use <your hint here>:number ,for password type use  <your hint here>:password.
-   ```   
+ 
    Inside your Activity
 	final String [] names = {"name","age:number","place","mob:number","email","username","pass:password"};
-        final RelativeLayout rl = (RelativeLayout)findViewById(R.id.activity_main);
+	
+    final RelativeLayout rl = (RelativeLayout)findViewById(R.id.activity_main);
+	
 	 final Drawable dr = getResources().getDrawable(R.drawable.shape);
 	 
 	 
@@ -53,9 +55,9 @@ default inputtype is text ,for number type use <your hint here>:number ,for pass
             public void onClick(View v) {
 	 
 	 
-	        ```
+	           ```
                  //get all inputs as an arraylist of string
-		 ArrayList<String> nm = new ArrayList<String>(new CreateInputs(MainActivity.this,names,rl,dr).getvalues(rl)) ;
+		          ArrayList<String> nm = new ArrayList<String>(new CreateInputs(MainActivity.this,names,rl,dr).getvalues(rl)) ;
                 ```
 		
 		
