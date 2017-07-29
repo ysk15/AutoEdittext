@@ -26,11 +26,11 @@ edit in app level gradle
 dependencies {
 
 
-	        compile 'com.github.ysk15:AutoEdittext:master-SNAPSHOT'
+	         compile 'com.github.ysk15:AutoEdittext:1.0'
 	}
 	
 	
-![Alt text](https://user-images.githubusercontent.com/30522134/28714091-77a26312-73af-11e7-8dc3-beff5fc0d0aa.png "Screen Shot")
+         ![Alt text](https://user-images.githubusercontent.com/30522134/28714091-77a26312-73af-11e7-8dc3-beff5fc0d0aa.png "Screen Shot")
 
 
 
