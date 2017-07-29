@@ -61,8 +61,11 @@ how to use
 //check if any fields are empty
 
 if(nm.size()==names.length){
+
 //get values on the repective order
+
 String name = nm.get(0);
+
 }
 else 
 {
