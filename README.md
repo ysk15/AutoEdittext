@@ -33,9 +33,6 @@ dependencies {
 	
    ![Alt text](https://user-images.githubusercontent.com/30522134/28714091-77a26312-73af-11e7-8dc3-beff5fc0d0aa.png "Screen Shot")
 
-
-
-
 how to use 
 
 
@@ -49,7 +46,7 @@ how to use
         new CreateInputs(MainActivity.this,names,rl,dr).create();
 	
 	
-   final Button b = (Button)findViewById(R.id.button);
+     final Button b = (Button)findViewById(R.id.button);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
