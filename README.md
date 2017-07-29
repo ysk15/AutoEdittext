@@ -45,12 +45,14 @@ how to use
 	 
 	 new CreateInputs(MainActivity.this,names,rl,dr).create();
 
-  final Button b = (Button)findViewById(R.id.button);
+ final Button b = (Button)findViewById(R.id.button);
   
-   b.setOnClickListener(new View.OnClickListener() {
-   
-    @Override
-      public void onClick(View v) {
+ b.setOnClickListener(new View.OnClickListener() 
+ {
+ 
+   @Override
+   public void onClick(View v)
+   {
       
   //get all inputs as an arraylist of string
   
@@ -65,13 +67,14 @@ how to use
   String name = nm.get(0);
   
     }
-     else {
+     else 
+     {
      
      Toast.makeText(MainActivity.this, "Fields are empty", Toast.LENGTH_SHORT).show();
      
-                }
-            }
-        });
+     }
+    }
+  });
 	
 Also create  a shape.xml in your drawable
        
