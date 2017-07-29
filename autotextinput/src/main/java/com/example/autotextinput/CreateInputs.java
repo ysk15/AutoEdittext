@@ -2,6 +2,8 @@ package com.example.autotextinput;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.text.InputType;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,6 +32,7 @@ public class CreateInputs {
         this.dr = dr;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     public void create(){
         LinearLayout li = new LinearLayout(cx);
         li.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
@@ -38,7 +41,7 @@ public class CreateInputs {
             EditText ed = new EditText(cx);
             ed.setHint(names[i]);
             ed.setId(i);
-            ed.setBackgroundResource(R.drawable.shape);
+            ed.setBackground(dr);
             ed.setPadding(5,5,5,5);
             ed.setGravity(View.TEXT_ALIGNMENT_CENTER);
             ed.setMaxLines(1);
