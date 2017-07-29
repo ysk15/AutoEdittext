@@ -43,16 +43,19 @@ how to use
      final String [] names = {"name","age:number","place","mob:number","email","username","pass:password"};
         final RelativeLayout rl = (RelativeLayout)findViewById(R.id.activity_main);
 	 final Drawable dr = getResources().getDrawable(R.drawable.shape);
+	 ```
         new CreateInputs(MainActivity.this,names,rl,dr).create();
-	
+	```
 	
      final Button b = (Button)findViewById(R.id.button);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+	        ```
                  //get all inputs as an arraylist of string
 		 ArrayList<String> nm = new ArrayList<String>(new CreateInputs(MainActivity.this,names,rl,dr).getvalues(rl)) ;
-                //check if any fields are empty
+                ```
+		//check if any fields are empty
                 if(nm.size()==names.length){
                 //get values on the repective order
                     String name = nm.get(0);
