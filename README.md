@@ -60,23 +60,18 @@ how to use
              
 //check if any fields are empty
 
-  if(nm.size()==names.length){
-  
+if(nm.size()==names.length){
 //get values on the repective order
-
-  String name = nm.get(0);
-  
-    }
-     else 
-     {
-     
-     Toast.makeText(MainActivity.this, "Fields are empty", Toast.LENGTH_SHORT).show();
-     
-     }
-    }
-  });
+String name = nm.get(0);
+}
+else 
+{
+ Toast.makeText(MainActivity.this, "Fields are empty", Toast.LENGTH_SHORT).show();
+}
+}
+});
 	
-Also create  a shape.xml in your drawable
+	Also create  a shape.xml in your drawable
        
      <?xml version="1.0" encoding="utf-8" ?> 
      <selector xmlns:android="http://schemas.android.com/apk/res/android">
@@ -87,22 +82,3 @@ Also create  a shape.xml in your drawable
      </shape>
      </item>
      </selector>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-	
-	
-	
- 
